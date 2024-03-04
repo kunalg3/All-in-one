@@ -1,0 +1,502 @@
+<html>
+<head>
+<style>
+#navbar {
+  font-family:Bebas Neue;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-image:linear-gradient(90deg,rgba(150,150,150,0.5),rgba(150,150,150,0.5)),url("https://user-images.githubusercontent.com/45648611/128606313-3650a99a-c844-44b0-8b03-2c5a8f9418fd.jpg");
+}
+
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li{
+  border-top:1px solid;
+  border-color:white;
+}
+#navbar header{
+  font-size:50px;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-size:30px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 11px;
+  background-image:linear-gradient(90deg,rgba(10,10,10,0.5),rgba(10,10,10,0.5)),url("https://user-images.githubusercontent.com/45648611/128606313-3650a99a-c844-44b0-8b03-2c5a8f9418fd.jpg");
+}
+
+section article {
+  color: white;
+  margin: 15px;
+  font-size: 20px;;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+#main-doc header{
+  font-family:Bebas Neue;
+  color:white;
+  font-size:50px;
+}
+footer a{
+  color:yellow;
+}
+pre{
+  background-color: rgba(200,200,200,0.5);
+}
+@media only screen and (max-width: 815px) {
+  
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Bebas Neue" rel="stylesheet" type="text/css"></head>
+<body>
+<nav id="navbar">
+  <header>PHP Documentation</header>
+  <ul>
+    <li>
+      <a class ="nav-link" href="#introduction" >Introduction
+      </a>
+    </li>
+     <li>
+      <a class ="nav-link" href="#what-you-should-already-know" >What You Should Already Know
+      </a>
+    </li>
+    <li>
+      <a class ="nav-link" href="#what-is-php">
+      What is PHP?</a>
+    </li>
+    <li>
+      <a class ="nav-link" href="#what-is-php-file">
+      What is PHP File?</a>
+    </li>
+    <li>
+      <a class ="nav-link" href="#what-php-can-do">
+      What PHP Can Do?</a>
+    </li>
+    <li>
+      <a class ="nav-link" href="#install">
+      Install</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#basic-php-syntax">
+      Basic PHP Syntax</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#comments-in-php">
+      Comments in PHP
+      </a>
+    </li>
+    <li>
+      <a class="nav-link" href="#variables">
+      Variables
+      </a>
+    </li>
+    <li>
+      <a class="nav-link" href="#echo">
+      PHP echo and print Statements
+      </a>
+    </li>
+    <li>
+      <a class="nav-link" href="#datatypes">
+      PHP Data Types
+      </a>
+    </li>
+  </ul>
+  </nav>
+
+<main id="main-doc">
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</p>
+      <p>
+        PHP is a widely-used, free , and efficient alternative to competitors such as Microsoft's ASP.</p>
+      <p>
+        PHP 7 is the latest stable release</p>
+      <p>
+        PHP code is executed on the server.</p>
+    </article>
+  </section>
+  <section class="main-section" id="what-you-should-already-know">
+    <header>What You Should Already Know</header>
+    <article>
+      <p>Before you continue you should have a basic understanding of the following:</p>
+        <ul>
+          <li>
+            HTML
+          <li>
+            CSS
+          </li>
+          <li>
+            Javascript
+          </li>
+          </ul>
+    </article>
+  </section>
+ <section class="main-section" id="what-is-php">
+  <article>
+    <header>What is PHP?</header>
+   <ul>
+     <li>
+       PHP is an acronym for "PHP: Hypertext Preprocessor"
+     </li>
+     <li>
+       PHP is a widely used ,open source scripting langage
+     </li>
+     <li>
+       PHP scripts are executed on the server
+     </li>
+     <li>
+       PHP is free to Download and use</li>
+    </ul>
+  <p>
+    <em>PHP is an amazing and popular language!</p>
+      <br>
+      <ul>
+        <li>
+          It is powerful enough to be at the core of the biggest blogging system on the web(WordPress)!
+        </li>
+        <li>
+          It is deep enough to run
+the largest social network(Facebook)!
+        </li>
+        <li>
+          It is also easy enough to be a beginner's first server side language!
+        </li>
+      </ul>
+    </em>
+  </article>
+</section>
+ <section class="main-section" id="what-is-php-file">
+  <header>What is a PHP File?
+  </header>
+  <article>
+      <ul>
+        <li>
+          PHP files can contain text,HTML,SS,JAVASCRIPT, and PHP code
+        </li>
+        <li>
+          PHP code is executed on the server, and the result is returned to the browser as plain HTML</li>
+        <li>
+          PHP fles jave extension <code>".php"</code>
+    </ul>
+  </article>
+</section>
+ <section class="main-section" id="what-php-can-do">
+  <header>What PHP Can Do</header>
+  <article>
+      <ul>
+        <li>
+          PHP can generate dynamic page content
+        </li>
+        <li>
+          PHP can create ,Open, read,write,delete,and close files on the server
+        </li>
+        <li>
+          PHP can collect form data
+        </li>
+        <li>
+          PHP can send and recieve cookies
+        </li>
+        <li>
+          PHP can add,delete,modify data in your database
+        </li>
+        <li>
+          PHP can be used to control user-access</li>
+        <li>
+          PHP can encrypt data 
+        </li>
+    </ul>
+  <p>
+    With PHP you are not limited to output HTML. You can output images,PDF files, and even Flash movies.You can als output any text, such as XHTML and xml.</p>
+  </article>
+</section>
+ <section class="main-section" id="install">
+  <header>Install</header>
+  <article>
+    <p>To start using PHP , you can:
+    </p>
+      <ul>
+        <li>
+          Find a web host with PHP and MySQL support
+        </li>
+        <li>
+          Install a web server on your PC and then install PHP and MySQL 
+        </li>
+  </article>
+</section>
+ <section class="main-section" id="basic-php-syntax">
+  <header>Basic PHP Syntax</header>
+  <article>
+    <p>A PHP script can be placed anywhere in the document.</p>
+    <p>
+      A PHP script starts/ends with :
+      <code>
+        <pre>
+        
+        &ltphp 
+        //PHP code goes here
+        ?>  
+        </pre>
+      </code>
+    </p>
+    <p>
+      The default file extension for PHP files is".php".
+      <br>
+      A PHP file normally contains HTML tags, and some PHP scripting code.
+    </p>      
+  </article>
+</section>
+ <section class="main-section" id="comments-in-php">
+  <article>
+    <header>Comments in PHP </header>
+    <section>
+      <p> A comment in PHP code is a line that is not executed as a part of the program.Its only purpose is to be read by someone who is looking at the code.
+      </p>
+      <p>
+        Comments can be used to:
+        </p>
+      <ul>
+        <li>
+          Let others understand your code
+        </li>
+        <li>
+          Remind yourself of what you did- Most programmers have experienced coming back to their own work work a year or two later and having to re-figure out what they did. Comments can remind you of what you were thinking when you wrote the code
+        </li>
+      </ul>
+    <p>
+      Example:
+    </p>
+      <code>
+        <pre>
+        
+        &lthtml>
+        &ltbody>
+        &lt?php
+        //This is a single-line comment
+
+       #This is also a single-line     comment
+       ?>
+       &lt/body>
+       &lt/html>
+       </pre>
+     </code>
+  </article>
+</section>
+ <section class="main-section" id="variables">
+  <header>Variables</header>
+  <article>
+    <p>Variables are "containers" for storing information.<br>
+      In PHP ,a a varible starts with the $ sign, followed by the name of the variable:
+    </p>
+    <p>Example</p>
+    <code>
+      <pre>
+      
+      &ltphp
+      $txt = "Hello world!";
+      $x = 5;
+      $y = 10.5;
+      ?>
+      </pre>
+    </code>
+    <p>After the execution of the statements above, the variable $txt will hold the value <code>Hello world!</code>, the variable <code>$x</code> will hold the value <code>5</code>, and the variable <code>$y </code>will hold the value <code>10.5</code> .
+    </p>
+    </article
+    </section>
+     <section class="main-section" id="echo">
+      <header>PHP echo and print Statements</header>
+      <article>
+        <p>
+          With PHP, there are two basic ways to get output: "echo" and "print".
+          "echo" and "print" are more or less the same. They are bothe used to output data to the scrren.
+        </p>
+        <p>
+          The diffenerences are small: "echo" has no return value while "print" has a return value of 1 so it can be used in expressions. "echo" can take multiple parameters(although such usage is rare)
+while "print" can take one argument. "echo" is marginally faster than "print".
+        </p>
+        <p>Example
+        </p>
+      <code>        
+        <pre>
+        
+        &ltphp
+        echo "&lth2>PHP is Fun!&lth2>";
+        echo "Hello world!&ltbr>";
+        echo "I'm about to learn PHP!&ltbr>";               
+        echo "This ","string ", "was ", "made ", "with multiple parameters.";
+        ?>
+        </pre>
+      </code>
+      </article>
+    </section>
+     <section class="main-section" id="datatypes">
+  <header>PHP Data Types</header>
+  <article>
+    <p>
+      Variables can store data of different types, and different data types can do different things.
+    </p>
+    <p>
+      PHP supports the following data types:
+    </p>
+    <ul>
+      <li>
+        String
+      <code>
+        <pre>
+        
+        &lt?php
+        $x="hello world";
+        echo $x;
+        ?>
+        </pre>
+      </code>
+        </li>
+      <li>
+        Integer
+      <code>
+        <pre>
+        
+        &lt?php
+        $x=5985;
+        echo $x;
+        ?>
+        </pre>
+      </code>
+        </li>
+        <li>
+        Float
+      <code>
+        <pre>
+        
+        &ltphp
+        $x=10.365;
+        echo $x;
+        ?>
+        </pre>
+      </code>
+      </li>
+      <li>
+        Boolean
+      </li>
+      <code>
+        <pre>
+        
+        &lt?php
+        $x=true;
+        echo $x;
+        ?>
+        </pre>
+      </code>
+      </li>
+      <li>
+        Array
+      </li>
+      <code>
+        <pre>
+        
+      &lt?php
+      $x=array("volvo","BMW","Toyota");
+      var_dump($x);
+      ?>
+      </pre>
+      </code>
+      <li>Object
+      <code>
+        <pre>
+        
+        &lt?php
+        class Car {
+        function Car() {
+        $this->model = "VW";}
+                   }
+        //create an object
+        $herbie = new Car();
+      
+        //show object properties
+        echo $herbie->model;
+        ?>
+         </pre>
+      </code>
+      </li>
+      <li>Null
+      <code>
+        <pre>
+        
+      &lt?php
+      $x = "Hello World!";
+      $x = "null";
+      var_dump($x);
+      ?>
+      </pre>
+      </code></li>
+    <footer>
+      Click here to know more<a href="https://www.w3schools.com/php/php_intro.asp" target="_blank">W3schools</a>
+    </footer>
+      </article>
+    </section>
+    </main>
+  </body>
+      
+    
+      </html>
